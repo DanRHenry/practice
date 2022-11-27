@@ -1,9 +1,9 @@
+console.log(document);
+
 // Put all letters into an array, letterBag
 let letterBag = [
     "A", "A", "A", "A", "A", "A", "A", "A", "A", "B", "B", "C", "C", "D", "D", "D", "D", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "F", "F", "G", "G", "G", "H", "H", "I", "I", "I", "I", "I", "I", "I", "I", "I", "J", "K", "L", "L", "L", "L", "M", "M", "N", "N", "N", "N", "N", "N", "O", "O", "O", "O", "O", "O", "O", "O", "P", "P", "Q", "R", "R", "R", "R", "R", "R", "S", "S", "S", "S", "T", "T", "T", "T", "T", "T", "U", "U", "U", "U", "V", "V", "W", "W", "X", "Y", "Y", "Z", "*", "*"
 ];
-
-
 
 let playableLetters = [];
 
@@ -20,13 +20,29 @@ while (playableLetters.length < 7) {
 
 // Connect playableLetters to html's playerTiles
 // Define each playerTiles ID # from the playerTileGrid section and add the same i from the playableLetters Array, incrementally
-for (let i=0; i<7; i++) {
+for (let i=0; i<=6; i++) {
     let id = document.getElementById(i);
     // console.log(i);
     id.append(playableLetters[i]);
     console.log(id);
     };
 
+// On the click of a gameGridBox square, change the background color and set its position as the starting point for adding a word
+let tileSquare = document.getElementsByClassName('gameGridBox');
+if (
+    
+
+
+//    element.addEventListener(event, function, useCapture);
+
+// Assign a variable to submitName
+    let submitName = document.getElementById('submitName');
+    console.log(submitName);
+// Get a name from the submitName field
+    function takeName(name){
+        
+    }
+    submitName.addEventListener("onclick", takeName)
 
 /*     <!-- Put these into JS later
 A - 1 point <br>
