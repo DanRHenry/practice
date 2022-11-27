@@ -28,21 +28,21 @@ for (let i=0; i<=6; i++) {
     };
 
 // On the click of a gameGridBox square, change the background color and set its position as the starting point for adding a word
-let tileSquare = document.getElementsByClassName('gameGridBox');
-if (
+// let tileSquare = document.getElementsByClassName('gameGridBox');
+// if (
     
 
 
 //    element.addEventListener(event, function, useCapture);
 
 // Assign a variable to submitName
-    let submitName = document.getElementById('submitName');
-    console.log(submitName);
+    // let submitName = document.getElementById('submitName');
+    // console.log(submitName);
 // Get a name from the submitName field
-    function takeName(name){
+    // function takeName(name){
         
-    }
-    submitName.addEventListener("onclick", takeName)
+    // }
+    // submitName.addEventListener("onclick", takeName)
 
 /*     <!-- Put these into JS later
 A - 1 point <br>
