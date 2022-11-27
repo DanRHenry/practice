@@ -9,7 +9,7 @@ let playableLetters = [];
 
 // Populate Playable Letter Array with randomLetter from letterBag
 while (playableLetters.length < 7) {
-    let randomLetterNumber = Math.floor(Math.random() *letterBag.length +1);
+    let randomLetterNumber = Math.floor(Math.random() *letterBag.length);
     playableLetters.push(letterBag[randomLetterNumber]);
 
 // Remove playableLetters from the letterBag
@@ -44,7 +44,7 @@ for (let i=0; i<=6; i++) {
     // }
     // submitName.addEventListener("onclick", takeName)
 
-/*     <!-- Put these into JS later
+/*     <!-- Put these into JS later - see menu assignment
 A - 1 point <br>
 B - 3 points <br>
 C - 3 points <br>
