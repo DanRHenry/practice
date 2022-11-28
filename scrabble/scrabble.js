@@ -38,6 +38,37 @@ function tradeInLetters() {
 
 tradeInLetters();
 
+// Accept input from the Vertical Field
+
+let verticalInput = document.getElementById("verticalInput");
+
+let verticalSubmitBTN = document.getElementById("verticalSubmitButton");
+
+verticalSubmitBTN.addEventListener("click", submitVerticalAnswer)
+
+function submitVerticalAnswer() {
+    let verticalInput = document.getElementById("verticalInput");
+    // let vI = verticalInput;
+    // verticalInput.innerText = verticalInput.innerText.replace(vI, "");
+    console.log (verticalInput.value);
+}
+// Accept input from the Horizontal Field
+
+let horizontalInput = document.getElementById("horizontalInput");
+
+let horizontalSubmitBTN = document.getElementById("horizontalSubmitButton");
+
+horizontalSubmitBTN.addEventListener("click", submitHorizontalAnswer)
+
+function submitHorizontalAnswer() {
+    let horizontalInput = document.getElementById("horizontalInput");
+    // let vI = verticalInput;
+    // verticalInput.innerText = verticalInput.innerText.replace(vI, "");
+    console.log (horizontalInput.value);
+
+}
+
+
 // clickedGameTile(); 
     // console.log(tradeInLetters);
     
