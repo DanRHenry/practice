@@ -26,6 +26,9 @@ body {
 
 .gamePageHeader {
     position:sticky;
+    /* border: 1px black solid; */
+    /* border-top: none; */
+    /* border-radius: 5px; */
     top: 0;
     margin-top: 0;
     padding-bottom: .5em;
@@ -94,7 +97,6 @@ body {
 
 .letterPoints {
     column-width: 4.5em;
-    /* border: 2px black solid; */
     color: black;
     font-size: larger;
     text-align: left;

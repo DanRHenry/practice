@@ -7,27 +7,68 @@ let letterBag = [
 
 let playableLetters = [];
 
-// Populate Playable Letter Array with randomLetter from letterBag
-while (playableLetters.length < 7) {
-    let randomLetterNumber = Math.floor(Math.random() *letterBag.length);
-    playableLetters.push(letterBag[randomLetterNumber]);
-
-// Remove playableLetters from the letterBag
-    // letterBag.splice(letterBag.indexOf((0), 1)); // Broken. Only removes letters from the end of array.
-    // console.log(letterBag);
+// Populate Playable Letter Array with randomLetter from letterBag and remove letters used from the letterBag
+function pullLettersFromLetterBag(){
+    while (playableLetters.length < 7) {
+        let randomLetterNumber = Math.floor(Math.random() *letterBag.length);
+        playableLetters.push(letterBag[randomLetterNumber]);
+        letterBag.splice(randomLetterNumber, 1);
+    }
+    for (let i=0; i<=6; i++) {
+        let id = document.getElementById(i);
+        let letterToReplace = id.innerText
+        id.innerText = id.innerText.replace (letterToReplace, playableLetters[i]);
+        };
 }
-// console.log(playableLetters);
+pullLettersFromLetterBag();
 
-// Connect playableLetters to html's playerTiles
-// Define each playerTiles ID # from the playerTileGrid section and add the same i from the playableLetters Array, incrementally
-for (let i=0; i<=6; i++) {
-    let id = document.getElementById(i);
-    // console.log(i);
-    id.append(playableLetters[i]);
-    console.log(id);
-    };
+let tradeInLettersButton = document.getElementById("tradeInLetters");
 
+function tradeInLetters() {
+    // console.log(letterBag)
+
+    //Listen for the button click, and return the letters to the letterbag and 
+    tradeInLettersButton.addEventListener("click", returnLettersToLetterbag)
+    function returnLettersToLetterbag() {
+        letterBag.push(...playableLetters)
+        playableLetters = []
+        pullLettersFromLetterBag();
+    }
+}
+
+tradeInLetters();
+
+// clickedGameTile(); 
+    // console.log(tradeInLetters);
+    
+
+
+
+// Unfinished:
 // On the click of a gameGridBox square, change the background color and set its position as the starting point for adding a word
+
+    // {
+
+
+
+
+    
+
+// function clickedGameTile(changeTileColor); {
+//     gameGridBox.addEventListener("click", changeTileColor)
+//     function changeTileColor() {
+//         console.log(hello);
+//     }
+// } 
+
+//     }
+//     }
+
+    
+
+
+// }
+
 // let tileSquare = document.getElementsByClassName('gameGridBox');
 // if (
     

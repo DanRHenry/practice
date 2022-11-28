@@ -37,6 +37,7 @@
 </div>
 <!-- 
     To Do
+    * use css positioning to fix the title scrolling issue
     * Letter Distribution List (display # of points per letter)
     * Create a scoreboard for at two players (human & computer)
     * Create a key for board colors: double letter, etc.
@@ -45,7 +46,7 @@
     * Points for using all letters
     * When entering a word, check for existing characters on the game grid to allow or disallow the word
     * Change the points amounts column to be a table nested in the grid.
-    * Create check that the only letters able to be played are contained in the playable letters array
+    * Create check that the only letters able to be played are contained in the playable letters array (use an event listener and a promise)
     * Potential api https://www.programmableweb.com/api/word-game-dictionary
 
 
@@ -337,7 +338,7 @@
 <div class="scoreBoard"> Scoreboard here
 </div>
 <div>
-    <button class="tradeInLetters">Trade in Letters</button>
+    <button id="tradeInLetters">Trade in Letters</button>
 </div>
 <div style="padding-bottom: 1em;">
     <button class="btn" id="returnButton">
