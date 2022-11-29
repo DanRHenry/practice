@@ -1,4 +1,48 @@
-console.log(document);
+//* Returning an error. Fix later
+
+// let nameInput = document.getElementById("nameInput");
+// let playerName;
+// let submitNameButton = document.getElementById("submitNameButton");
+
+// submitNameButton.addEventListener("click", submitName)
+
+// function submitName(yourNameHere) {
+//     let nameInput = document.getElementById("nameInput");
+//     playerName = nameInput.value;
+//     console.log(`Hello, ${playerName}`);
+//     document.createElement('div')
+//     document.div
+// }
+// console.log(yourNameHere);
+// console.log(`I can still see ${playerName}`);
+
+// let nameInput = document.getElementById("nameInput");
+//     function submitName() {
+        
+//         console.log(playerName);
+//         return playerName;
+//     }
+
+
+// console.log(playerName);
+
+//* Example from further down the code
+
+// let verticalInput = document.getElementById("verticalInput");
+
+// let verticalSubmitBTN = document.getElementById("verticalSubmitButton");
+
+/* verticalSubmitBTN.addEventListener("click", submitVerticalAnswer)
+
+function submitVerticalAnswer() {
+    let verticalInput = document.getElementById("verticalInput");
+    // let vI = verticalInput;
+    // verticalInput.innerText = verticalInput.innerText.replace(vI, "");
+    console.log (verticalInput.value);
+} */
+
+
+
 
 // Put all letters into an array, letterBag
 let letterBag = [
@@ -18,16 +62,19 @@ function pullLettersFromLetterBag(){
         let id = document.getElementById(i);
         let letterToReplace = id.innerText
         id.innerText = id.innerText.replace (letterToReplace, playableLetters[i]);
-        };
+    }
 }
+
 pullLettersFromLetterBag();
+
+
+//Listen for the button click, and return the letters to the letterbag and 
 
 let tradeInLettersButton = document.getElementById("tradeInLetters");
 
 function tradeInLetters() {
     // console.log(letterBag)
 
-    //Listen for the button click, and return the letters to the letterbag and 
     tradeInLettersButton.addEventListener("click", returnLettersToLetterbag)
     function returnLettersToLetterbag() {
         letterBag.push(...playableLetters)
@@ -67,6 +114,37 @@ function submitHorizontalAnswer() {
     console.log (horizontalInput.value);
 
 }
+
+// Work on this later
+// Get words from word-game-dictionary
+/* 
+let url = "https://www.programmableweb.com/api/word-game-dictionary"
+
+function fetch(url) {
+    let response = await fetch(url);
+    let results = await response.json();
+    let data = results.data[1];
+    console.log(data);
+}
+
+
+async function INFO(url, randomNumber) {
+    fetch(url)
+ *//* 
+        - JSONify the data returned */
+/*     try {   //  - Within the function, create a TRY/CATCH.
+        let response = await fetch(url); // - TRY to fetch the url
+        let results = await response.json();
+        let data = results.data[randomNumber];
+        // - console.log 3 different positions:
+        console.log("Full Results: ", data); // - The overall promise returned * hint: use the random number to target an object within the array provided.
+        console.log("Name Value: ", data.name); // - The name of a single character
+        console.log("Image URL: ", data.imageUrl); // - The imageURL of the character that is provided.
+        // - CATCH any error that is returned.
+    } catch (error) {
+        console.error(error);
+    }
+} */
 
 
 // clickedGameTile(); 

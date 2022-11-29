@@ -39,7 +39,7 @@
     </div>
 </div>
 <!-- 
-    To Do
+    ! To Do List
     * use css positioning to fix the title scrolling issue
     * Letter Distribution List (display # of points per letter)
     * Create a scoreboard for at two players (human & computer)
@@ -64,7 +64,7 @@
     Deal with blank tiles
 -->
     <div class="gameBoard">
-        <div class="letterPoints">
+        <div class="letterPoints" id="columnLeft">
                 A - 1 point <br>
                 B - 3 points <br>
                 C - 3 points <br>
@@ -79,6 +79,8 @@
                 L - 1 point <br>
                 M - 3 points <br>
                 N - 1 point <br>
+        </div>
+        <div class="letterPoints" id="columnRight">
                 O - 1 point <br>
                 P - 3 points <br>
                 Q - 10 points <br>
@@ -96,7 +98,7 @@
             </div>
         <div class="gameGrid">
             <!-- Row 0 -->
-            <div class="gameGridBox tripleWord", id="0000"></div> <!-- had to add a character to make the grid appear-->
+            <div class="gameGridBox tripleWord", id="0000"></div> 
             <div class="gameGridBox standardSquare standardSquare", id="0001"> </div>
             <div class="gameGridBox standardSquare", id="0002"> </div>
             <div class="gameGridBox doubleLetter", id="0003"> </div>
@@ -348,6 +350,6 @@
         <a href="index.html">Return to Title</a>
     </button>
 </div>
-<script src="./scrabble.js"></script>
+<script src="./gameBoard.js"></script>
 </body>
 </html>
