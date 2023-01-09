@@ -56,7 +56,7 @@ function pullLettersFromLetterBag(){
     while (playableLetters.length < 7) {
         let randomLetterNumber = Math.floor(Math.random() *letterBag.length);
         playableLetters.push(letterBag[randomLetterNumber]);
-        letterBag.splice(randomLetterNumber, 1);
+        letterBag.splice(randomLetterNumber, 1); 
     }
     for (let i=0; i<=6; i++) {
         let id = document.getElementById(i);
@@ -84,6 +84,25 @@ function tradeInLetters() {
 }
 
 tradeInLetters();
+
+// Give the gameGridBox a coordinate system???
+
+// Trial, populate the gameGridBoxes with letters from the playableLetters
+
+function putLettersInTheGameGridBoxes(){
+    while (playableLetters.length < 7) {
+        let randomLetterNumber = Math.floor(Math.random() *letterBag.length);
+        playableLetters.push(letterBag[randomLetterNumber]);
+        letterBag.splice(randomLetterNumber, 1); 
+    }
+    for (let i=0; i<=6; i++) {
+        let id = document.getElementById(i);
+        let letterToReplace = id.innerText
+        id.innerText = id.innerText.replace (letterToReplace, playableLetters[i]);
+    }
+}
+
+
 
 // Accept input from the Vertical Field
 

@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "name":"Goofy",
+            "imageURL":"https://imgs.search.brave.com/hzUYBp871FO38uVcrJo1-1xQh0saS7khcscC0AMogb8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9hbGxo/ZHdhbGxwYXBlcnMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE1LzA2L0dvb2Z5/LTEwLmpwZw"
+        },
+        {
+            "name":"Micky",
+            "imageURL":"https://imgs.search.brave.com/9uD_7UF9NglevCz_YraFAwxyEWM1L71vIIk7GiPmusw/rs:fit:1200:990:1/g:ce/aHR0cHM6Ly9taXIt/czMtY2RuLWNmLmJl/aGFuY2UubmV0L3By/b2plY3RfbW9kdWxl/cy8xNDAwL2Y4MDdm/MjEzOTI3MzAxLjU2/MjdhNWRhNTgyNzQu/anBn"
+        },
+        {
+            "name":"Donald",
+            "imageURL":"https://imgs.search.brave.com/d7ZFSnIgUxfbrq8bkJ7Im-QncNMEMlG_I80riuhE7Sc/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly80LmJw/LmJsb2dzcG90LmNv/bS8tazQ2X2RwVUtn/TzAvVF9UOGYyc09m/U0kvQUFBQUFBQUFF/XzAvSkhhbmNuVkYx/YWMvczE2MDAvRG9u/YWxkK0R1Y2srV2Fs/bHBhcGVycyszLmpw/Zw"
+        }
+    ]
+}

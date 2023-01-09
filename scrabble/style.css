@@ -45,11 +45,11 @@ body {
     justify-content: center;
     /* border: 1px black solid; */
 }
-#verticalInput {
-    /* margin-right: 5%; */
+#verticalInput::placeholder {
+    text-align: center;
 }
-#horizontalInput {
-    /* margin-left: 5%; */
+#horizontalInput::placeholder {
+    text-align: center;
 }
 
 #submit {
@@ -68,8 +68,9 @@ body {
 }
 
 .playerTiles {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 2px solid black;
     background-color: white;
     min-height: 1.5em;
@@ -83,7 +84,6 @@ body {
     color: rgb(75, 58, 185);
     text-shadow: 2px 2px 2px antiquewhite;
     font-size: 3em;
-    text-align: center;
 }
 
 .gameBoard {
@@ -112,10 +112,12 @@ padding-right: 3vw;
 }
 
 .scoreBoard {
-    text-align: center;
 }
 
 .standardSquare {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
 }
 
@@ -150,8 +152,9 @@ padding-right: 3vw;
 }
 
 .gameGridBox {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 2px solid black;
     min-height: 5vh;
     max-height: 5vh;
@@ -183,5 +186,4 @@ padding-right: 3vw;
     left: 0;
     bottom: 0;
     padding: .5em;
-    text-align: center;
 }

@@ -1,0 +1,28 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.calcHolder {
+    display: flex;
+    justify-content: center;
+}
+.calcFace {
+    background-color: lightgray;
+    border-radius: 15px;
+    display: grid;
+    max-width: fit-content;
+    grid-template-columns: repeat(4, 4em);
+    grid-template-rows: repeat(6, 4em);
+    border: 10px black solid;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4em;
+    border-radius: 15px;
+    border: 1px black solid;
+    background-color: skyblue;
+}
