@@ -1,0 +1,38 @@
+body {
+    background-color: tan;
+}
+nav {
+    position: fixed;
+    top: 25vh;
+    left: 32vw;
+    text-align: center;
+    margin: 3em;
+    user-select: none;
+}
+
+button {
+    margin-right: 3em;
+    font-size: large;
+    height: 5em;
+    width: 5em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+button:hover, button:focus, button:active {
+    margin-right: 20em;
+    margin-top: 10em;
+}
+nav :nth-child(1) {
+    color: green;
+}
+nav :nth-child(2) {
+    color: red;
+}
+nav :nth-child(3) {
+    color: blue;
+}
+nav :nth-child(4) {
+    color: purple;
+}
+
