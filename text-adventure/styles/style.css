@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+    background-image: url("https://r4.wallpaperflare.com/wallpaper/270/234/535/digital-art-pixel-art-pixelated-pixels-wallpaper-6960388d014a9d1b0607684f70f1f62d.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+#box {
+    opacity: 85%;
+    background-color: green;
+    border: 1vw solid white;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 10vw;
+    margin-left: 2vw;
+    height: 30vw;
+    width: 30vw;
+}
+
+h1 {
+    font-size: 2vw;
+    display: flex;
+    margin-top: 2vw;
+    flex-direction: row;
+    text-shadow: 2vw 2vw 2vw gray;
+}
+
+#consoleText {
+    height: 10vw;
+}
+#inputText {
+    opacity: initial;
+    border: .2vw solid black;
+    height: 3vw;
+    width: 20vw;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+#displayText {
+    font-size: 2vw;
+}
+
+#commands {
+    display: flex;
+    flex-direction: row;
+    opacity: 85%;
+    background-color: gray;
+    border: 1vw solid white;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    height: 5vw;
+    width: 30vw;
+}
+
+#commands > button {
+    opacity: 200%;
+    margin-left: .5em;
+    margin-right: .5em;
+    width: 33%;
+    height: 50%;
+    font-size: 1.25vw;
+}
