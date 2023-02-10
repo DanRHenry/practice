@@ -1,0 +1,182 @@
+body {
+    max-width: 100vw;
+    text-align: center;
+    /* background-color: rgba(8, 8, 112, 0.795); */
+    background-color: rgb(65, 35, 0);
+    color: white;
+}
+
+body.div {
+    /* max-width: 100vw; */
+    /* display: flex; */
+    /* text-align: center; */
+    /* align-items: center; */
+    /* min-width: 910px; */
+}
+
+.title{
+    /* text-align: center; */
+    /* align-items: center; */
+    /* max-width: 100vw; */
+    /* margin: 0, 25vw, 0, 25vw; */
+    font-size: 5em;
+    text-shadow: 2px 2px 2px antiquewhite;
+}
+
+.hero {
+    max-width: 100vw;
+    /* object-fit: contain; */
+/* background-color: black; */
+    /* text-align: center; */
+    /* padding-bottom: 2rem; */
+}
+
+#startGame {
+    padding: .5rem 1rem;
+    margin-top: 1em;
+    border-radius: .1em;
+}
+
+.turn{
+    text-align: center;
+    /* background-color: black; */
+    font-size: 2.5em;
+    text-shadow: none;
+}
+
+.gamePlayPage {
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+    /* width: 100vw; */
+    /* text-align: center; */
+    align-items: center;
+}
+
+.answerboard {
+    position: relative ;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    user-select: none;
+    background-color: rgba(8, 8, 112, 0.795);
+    width: fit-content;
+    /* text-align: center; */
+    /* background-color: black; */
+}
+
+.category {
+    font-size: 1.25em;
+    padding-top: 1.25em;
+    padding-right: .5em;
+    padding-left: .5em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid white;
+    border-bottom: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.473);
+    /* width: 5rem; */
+
+}
+
+.answer {
+    padding-top: 1.5em;
+    border: 2px solid white;
+    margin: 0;
+    height: 3rem;
+    /* min-height: 3rem; */
+    /* max-height: 100vh; */
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+.answer:hover {
+    background-color: gray;
+}
+
+.answer:active {
+    background-color: darkgrey;
+}
+
+
+.finalanswerboard {
+    display: grid;
+    text-align: center;
+    max-width: 750fr;
+    height: 10em;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.finalcategory {
+    width: 30%;
+    margin: 0% 35% 0% 35%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.473);
+
+}
+#finalanswer {
+    grid-area: 2/ 2/ 3/ 3;
+    font-size: 2em;
+    border: 2px solid white;
+    border-bottom: none;
+    color: black;
+    background-color: white;
+}
+.answerInputLine {
+    /* background-color: black; */
+    height: 2.5em;
+    text-align: center;
+}
+.answerInput {
+    margin-top: 1em;
+    height: 2em;
+}
+#logo {
+    border: 5px solid white; 
+    border-radius: 50%;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a:active {
+    color: black;
+}
+.btn:hover {
+    background-color: darkgray;
+}
+.btn {
+    font-size: 2em;
+}
+
+
+#bid {
+    margin-top: none;
+    text-align: center;
+}
+.footer {
+    height: 3rem;
+    /* text-align: center; */
+    text-shadow: none;
+}
+input {
+    text-align: center;
+}
+
+.playerScore {
+    display: flex;
+    /* text-align: center; */
+    justify-content: space-evenly;
+}
