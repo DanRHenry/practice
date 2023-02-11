@@ -1,3 +1,12 @@
+// Global Variables
+let z = 0;
+let x = 9;
+let y = 9;
+let playerLocation = [z, x, y];
+let gameBoard = [];
+let i = 0;
+let input = inputText.value.toLowerCase()
+
 // Useful Links:
 // https://mixkit.co/free-sound-effects/horror/
 
@@ -10,27 +19,55 @@ const look = document.getElementById("look");
 const take = document.getElementById("take");
 const use = document.getElementById("use");
 const displayText = document.getElementById("displayText");
-
+const north = document.getElementById("North");
+const south = document.getElementById("South");
+const east = document.getElementById("East");
+const west = document.getElementById("West");
 // Event Listeners
-move.addEventListener("click", go);
+
+// Directions
+north.addEventListener("click", function() {
+    let input = inputText.value.toLowerCase()
+    go("north")});
+north.addEventListener("click", function() {
+        let input = inputText.value.toLowerCase()
+        describe()});
+
+south.addEventListener("click", function() {
+    let input = inputText.value.toLowerCase()
+    go("south")});
+south.addEventListener("click", function() {
+        let input = inputText.value.toLowerCase()
+        describe()});
+
+east.addEventListener("click", function() {
+    let input = inputText.value.toLowerCase()
+    go("east")});
+east.addEventListener("click", function() {
+        let input = inputText.value.toLowerCase()
+        describe()});
+
+west.addEventListener("click", function() {
+        let input = inputText.value.toLowerCase()
+    go("west")});
+west.addEventListener("click", function() {
+        let input = inputText.value.toLowerCase()
+        describe()});
+
+move.addEventListener("click", function() {
+    let input = inputText.value.toLowerCase()
+    go(input)});
+    
 look.addEventListener("click", describe);
 
-// Global Variables
-let z = 0;
-let x = 9;
-let y = 9;
-let playerLocation = [z, x, y];
-let gameBoard = [];
-let i = 0;
-
 //Location Class Constructor
-class Location {
-    constructor(coordinate, name, description, north, east, south, west, up, down, item1, item2, item3) {
-        this.coordinate = coordinate;
-        this.description = description;
-        this.north = north;
-        this.east = east;
-        this.south = south;
+    class Location {
+        constructor(coordinate, name, description, north, east, south, west, up, down, item1, item2, item3) {
+            this.coordinate = coordinate;
+            this.description = description;
+            this.north = north;
+            this.east = east;
+            this.south = south;
         this.west = west;
         this.up = up;
         this.down = down;
@@ -44,14 +81,12 @@ class Location {
 let locationArray = []
 
 // Functions
-
 function createLocation(newLocation, coordinate, name, description, north, east, south, west, up, down, item1, item2, item3) {
     newLocation = new Location(coordinate, name, description, north, east, south, west, up, down, item1, item2, item3);
     return locationArray.push(newLocation)
 }
 
-function go() {
-    let text = inputText.value.toLowerCase();
+function go(text) {
     if (text == "north") {
         displayText.innerHTML = `You move ${text}`;
         y++
