@@ -43,6 +43,8 @@ class Location {
 
 let locationArray = []
 
+// Functions
+
 function createLocation(newLocation, coordinate, name, description, north, east, south, west, up, down, item1, item2, item3) {
     newLocation = new Location(coordinate, name, description, north, east, south, west, up, down, item1, item2, item3);
     return locationArray.push(newLocation)
