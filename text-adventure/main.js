@@ -1,3 +1,8 @@
+// Useful Links:
+// https://mixkit.co/free-sound-effects/horror/
+// https://groups.google.com/a/chromium.org/g/chromium-extensions/c/AzO_taH2b7U?pli=1 // Creating JSON from local storage
+
+
 // Global Variables
 let z = 0;
 let x = 9;
@@ -5,10 +10,8 @@ let y = 9;
 let playerLocation = [z, x, y];
 let gameBoard = [];
 let i = 0;
-let input = inputText.value.toLowerCase()
+let input = inputText.value.toLowerCase();
 
-// Useful Links:
-// https://mixkit.co/free-sound-effects/horror/
 
 // DOM Section
 
@@ -23,6 +26,7 @@ const north = document.getElementById("North");
 const south = document.getElementById("South");
 const east = document.getElementById("East");
 const west = document.getElementById("West");
+
 // Event Listeners
 
 // Directions
@@ -144,7 +148,20 @@ function describe() {
 
 //Locations
 let currentLocation = [z,x,y];
-createLocation("start", [0,9,9], "home", "Starting Point", "You look to the north", 'You look to the south', 'You look to the east', 'You look to the west', 'You look up', 'You look down', 'You see item one', 'You see item 2', 'You see item 3');
+createLocation(
+    "start", 
+    [0,9,9], 
+    "home", 
+    "Starting Point", 
+    "You look to the north", 
+    'You look to the south', 
+    'You look to the east', 
+    'You look to the west', 
+    'You look up', 
+    'You look down', 
+    'You see item one', 
+    'You see item 2', 
+    'You see item 3');
 createLocation("cemetary",[0,9,10], 'second position.', 'position 2');
 createLocation("cemetary",[0,9,11], 'cemetary', 'An old cemetary lies before you.');
 
