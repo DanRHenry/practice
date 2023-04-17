@@ -11,6 +11,7 @@ const south = document.getElementById("South");
 const east = document.getElementById("East");
 const west = document.getElementById("West");
 const submit = document.getElementById("submit-btn");
+const inputText = document.getElementById("inputText");
 
 // Useful Links:
 // https://mixkit.co/free-sound-effects/horror/
@@ -103,7 +104,10 @@ move.addEventListener("click", function () {
 look.addEventListener("click", describe);
 
 submit.addEventListener("click", (response) => {
+  event.preventDefault()
   response = text.value.toLowerCase();
+  inputText.value = "";
+
 
   // input = response.split(" ")
 
@@ -415,7 +419,7 @@ createLocation(
   "home", // 2 name
   // `\nYou're at the entrance to the ${brightYellow}PTSB January Cohort${reset}.\nYou see a ${brightGreen}magnetic stripe reader${reset}.`, // 3
   // `\nYou're at the entrance to the ${brightYellow}PTSB January Cohort${reset}.\nYou see a ${brightGreen}magnetic stripe reader${reset}.gggggggg ggg ggggggg ggggg gggg ggggggggggg g ggggg ggggg ggggggggg g g ggg ggg ggggg ggggggg ggg gggg g gg ggggg ggg ggg g gggg gg gggggg gg ggggg gggg gg g ggggg ggggggg ggg gggg gggggggggg ggg ggggggg ggggg gggg ggggggggggg g ggggg ggggg ggggggggg g g ggg ggg ggggg ggggggg ggg gggg g gg ggggg ggg ggg g gggg gg gggggg gg ggggg gggg gg g ggggg ggggggg ggg gggg gggggggggg ggg ggggggg ggggg gggg ggggggggggg g ggggg ggggg ggggggggg g g ggg ggg ggggg ggggggg ggg gggg g gg ggggg ggg ggg g gggg gg gggggg gg ggggg gggg gg g ggggg ggggggg ggg gggg gggggggggg ggg ggggggg ggggg gggg ggggggggggg g ggggg ggggg ggggggggg g g ggg ggg ggggg ggggggg ggg gggg g gg ggggg ggg ggg g gggg gg gggggg gg ggggg gggg gg g ggggg ggggggg ggg gggg gg`, //
-  "You're at the entrance to the PTSB January Cohort. You see a magnetic stripe reader.",
+  "You're at the entrance to the PTSB January Cohort. <br> You see a <span><strong>magnetic stripe reader.</strong></span>",
   "blocked", // 4 North
   undefined, // 5 East
   undefined, // 6 South
@@ -866,7 +870,7 @@ function describe() {
       // itemList = (itemList.slice(0,-1)+`${reset}.`);
       itemList = itemList.slice(0, -1);
     }
-    let description = `You look around and see ${locationArray[i].description}.`;
+    let description = `You look around and see ${locationArray[i].description}`;
     // Progress toward line character limit of 80
     /*         let description = "";
           
@@ -893,7 +897,7 @@ function describe() {
                   console.log(tempArray)
                   console.log(tempArray.length)
               // description = */
-    displayText.innerHTML = `You look around and see ${locationArray[i].description}. You also see a ${itemList}`;
+    displayText.innerHTML = `You look around and see ${locationArray[i].description} You also see a <strong>${itemList}</strong>`;
     //   console.log(`You look around and see ${locationArray[i].description}.\nYou also see a ${itemList}`);
     //   console.log(`You look around and see ${locationArray[i].description}.\nYou also see a ${yellow}${itemList}${reset}`);
     //?            start();
